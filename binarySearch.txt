@@ -1,5 +1,6 @@
 package binarySearch;
 
+
 import java.util.Scanner;
 public class binarySearch {
 
@@ -23,6 +24,7 @@ public class binarySearch {
 			int mid = (first+last)/2;
 			if(item==arr[mid]) {
 				System.out.println("Item found");
+				System.out.println("Item found at location : "+arr[mid]);
 				flag = 1;
 				break;
 			}
@@ -32,7 +34,6 @@ public class binarySearch {
 			else {
 				last =mid-1;
 			}
-			System.out.println(arr[mid]);
 		}
 		if(flag==0) {
 		System.out.println("item Not found");
